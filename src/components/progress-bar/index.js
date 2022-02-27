@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
   
 const ProgressBar = ({bgcolor,progress,height}) => {
-     
+    //  Progress bar styles 
     const Parentdiv = {
         height: height,
         width: '80%',
@@ -30,14 +30,15 @@ const ProgressBar = ({bgcolor,progress,height}) => {
         fontWeight: 900
         }
  
-return (
-<div style={Parentdiv}>
-<div style={Childdiv} 
-className={progress === 100? 'childDiv animate':'childDiv' }>
- <span style={progresstext}>{`${progress}%`}</span>
-</div>
-</div>
-)
+      return (
+      <div style={Parentdiv}>
+          <div style={Childdiv} 
+          // ternary to trigger animitaion in css 
+          className={progress === 100? 'childDiv animate':'childDiv' }>
+             <span style={progresstext}>{`${progress}%`}</span>
+          </div>
+      </div>
+      )
 }
 
 export default ProgressBar
