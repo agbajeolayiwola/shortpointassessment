@@ -1,5 +1,6 @@
 import ProgressBar from "../progress-bar";
 import React, {useState} from 'react'
+import './styles.css'
 
 
   
@@ -20,7 +21,8 @@ function FinishButton() {
         <ProgressBar bgcolor="#76b9e2" progress={progress}   height={30} />
         <ProgressBar bgcolor="#d9b665" progress={progress}   height={30} />
     </div>
-        <button onClick={handleClick}>
+        <button onClick={handleClick}
+        className='button'>
             Finish
         </button>
     </>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles.css'
   
 const ProgressBar = ({bgcolor,progress,height}) => {
      
@@ -7,7 +8,9 @@ const ProgressBar = ({bgcolor,progress,height}) => {
         width: '80%',
         backgroundColor: 'whitesmoke',
         borderRadius: 40,
-        margin: 50
+        marginLeft: '10%',
+        marginBottom:'5%'
+
       }
       
       const Childdiv = {
@@ -29,7 +32,8 @@ const ProgressBar = ({bgcolor,progress,height}) => {
  
 return (
 <div style={Parentdiv}>
-<div style={Childdiv}>
+<div style={Childdiv} 
+className='childDiv'>
  <span style={progresstext}>{`${progress}%`}</span>
 </div>
 </div>
