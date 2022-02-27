@@ -6,7 +6,7 @@ const ProgressBar = ({bgcolor,progress,height}) => {
     const Parentdiv = {
         height: height,
         width: '80%',
-        backgroundColor: 'whitesmoke',
+        backgroundColor: '#ebebeb',
         borderRadius: 40,
         marginLeft: '10%',
         marginBottom:'5%'
@@ -18,8 +18,8 @@ const ProgressBar = ({bgcolor,progress,height}) => {
         width: `${progress}%`,
         tramsition:'1s ease-in-out forwards',
         backgroundColor: bgcolor,
-        boxShadow:'#dedede 1px 2px 2px',
-        borde:'sold 1px',
+        boxShadow:'rgb(142 138 138) 0px 0px 4px;',
+        border:'solid 1px',
         borderColor:'#d3d3d3',
         borderRadius:40,
         textAlign: 'right'
@@ -33,7 +33,7 @@ const ProgressBar = ({bgcolor,progress,height}) => {
 return (
 <div style={Parentdiv}>
 <div style={Childdiv} 
-className='childDiv'>
+className={progress === 100? 'childDiv animate':'childDiv' }>
  <span style={progresstext}>{`${progress}%`}</span>
 </div>
 </div>

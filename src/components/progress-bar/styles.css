@@ -9,3 +9,14 @@ background:repeating-linear-gradient(
 }
     
 
+.animate{
+    animation: moveProgress 1s ease-in-out forwards;
+}
+@keyframes moveProgress{
+    from{
+        width: 50%;
+    }
+    to{
+        width: 100%;
+    }
+}

@@ -8,7 +8,8 @@ function FinishButton() {
     const [progress, setProgress] = useState(50)
 
     const handleClick = ()=>{
-        setProgress(100)
+         setProgress(100)
+        
     }
 
   return (
